@@ -1,0 +1,85 @@
+
+.divizona {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.r {
+    background-image: radial-gradient(rgb(255, 51, 51), rgb(255, 0, 0));
+}
+
+.g {
+    background-image: radial-gradient(rgb(51, 255, 61), rgb(21, 255, 0));
+}
+
+.b {
+    background-image: radial-gradient(rgb(65, 51, 255), rgb(25, 0, 255));
+}
+
+.r, .b, .g {
+    width: 33.333%;
+}
+
+.g {
+    height: 100%;
+}
+.r, .b {
+    height: 50%;
+}
+
+.cubao {
+    display: flex;
+    align-items: flex-end;
+    width: 400px;
+    height: 400px;
+    background-image: radial-gradient(rgb(223, 223, 223), rgb(250, 250, 250));
+    border: 3px black solid;
+}
+
+@media screen and (max-width: 770px) {
+    .r, .b, .g {
+        height: 33.333%;
+    }
+    
+    .r {
+        width: 50%;
+    }
+    .g {
+        width: 100%;
+    }
+    .b {
+        width: 50%;
+    }
+    
+    .cubao {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    .r, .b, .g {
+        height: 33.333%;
+    }
+    
+    .r {
+        width: 33%;
+    }
+    .g {
+        width: 66%;
+    }
+    .b {
+        width: 100%;
+    }
+    
+    .cubao {
+        align-items: flex-start;
+        flex-direction: column;
+        width: 320px;
+        height: 320px;
+    }
+}
