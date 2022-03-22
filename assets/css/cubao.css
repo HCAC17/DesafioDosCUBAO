@@ -1,9 +1,7 @@
-
 .divizona {
     display: flex;
     align-items: center;
     justify-content: center;
-    
     width: 100%;
     height: 100%;
 }
@@ -22,13 +20,11 @@
 
 .r, .b, .g {
     width: 33.333%;
+    height: 50%;
 }
 
 .g {
     height: 100%;
-}
-.r, .b {
-    height: 50%;
 }
 
 .cubao {
@@ -77,8 +73,6 @@
     }
     
     .cubao {
-        align-items: flex-start;
-        flex-direction: column;
         width: 320px;
         height: 320px;
     }
